@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="icon" href="https://cdn.glitch.global/a3aba47e-7bc6-454b-a77e-5cdde89623ff/icon.png" />
+
+    <title>Turtle Game!</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+   <!-- Import the webpage's javascript files -->
+    <script src="/turtle-data.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div style="height:10vw;">
+    </div>
+    <center>
+      <p id="score">
+        Current Score: 0 / 0
+      </p>
+      <img id="turtlePicture"/>
+      <p>What kind of turtle?</p>
+        <input type="text" list="suggestions" style="width: 30vw;" id="textInput" enterkeyhint="go"/><input type="button" value=" → " onclick="submitForm()"/>
+      <datalist id="suggestions">
+      </datalist>
+    </center>
+  </body>
+</html>
